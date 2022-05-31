@@ -12,17 +12,19 @@ const assertEqual = function(actual, expected) {
 //An array with only one element should still yield that one element as its head
 //An empty array should yield undefined as its head
 
-function head (input) {
+const head = function(input) {
   let str = '';
   let num = 0;
   
   if (input.length === 1) {
     if (typeof input[0] === 'string') {
-      return str = input[0];
+      str = input[0];
+      return str;
     }
     
-    if (typeof input[0] === 'number'){
-      return num = input[0];
+    if (typeof input[0] === 'number') {
+      num = input[0];
+      return num;
     }
   }
     
@@ -30,11 +32,11 @@ function head (input) {
     return str = input[0];
   }
   
-  if (typeof input[0] === 'number'){
+  if (typeof input[0] === 'number') {
     return num = input[0];
   }
 
-}
+};
 
 
 //TEST CODE
