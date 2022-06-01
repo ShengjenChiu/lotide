@@ -17,7 +17,7 @@ const eqArrays = function(arr1, arr2) {
   let arr2Len = arr2.length;
 
   if (arr1Len === arr2Len) {
-    if(arr1.every((curArr1Element, currArr1Index) => curArr1Element === arr2[currArr1Index])) {
+    if (arr1.every((curArr1Element, currArr1Index) => curArr1Element === arr2[currArr1Index])) {
       b1 = true;
       //break;
     }
