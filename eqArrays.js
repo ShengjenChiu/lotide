@@ -19,7 +19,6 @@ const eqArrays = function(arr1, arr2) {
   if (arr1Len === arr2Len) {
     if (arr1.every((curArr1Element, currArr1Index) => curArr1Element === arr2[currArr1Index])) {
       b1 = true;
-      //break;
     }
   }
   return b1;
@@ -29,6 +28,5 @@ const eqArrays = function(arr1, arr2) {
 //assertEqual() Test Cases
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
