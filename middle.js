@@ -1,31 +1,3 @@
-// TEST/ASSERTION FUNCTIONS
-//eqArrays to not return true for nested arrays or arrays of objects that are identical.
-const eqArrays = function(arr1, arr2) {
-  let b1 = false;
-  let arr1Len = arr1.length;
-  let arr2Len = arr2.length;
-
-  if (arr1Len === arr2Len) {
-    if (arr1.every((curArr1Element, currArr1Index) => curArr1Element === arr2[currArr1Index])) {
-      b1 = true;
-    }
-  }
-  return b1;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  let returnString = '';
-
-  if (eqArrays(actual, expected)) {
-    returnString = `😀 😀 Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    returnString = `😔 😔 Assertion Failed: ${actual} !== ${expected}`;
-  }
-  return console.log(returnString);
-};
-
-
-
 //Implement middle which will take in an array and return the middle-most element(s) of the given array.
 // ACTUAL FUNCTION
 const middle = function(array) {
@@ -56,11 +28,4 @@ const middle = function(array) {
   return returnArr;
 };
 
-
-//Test Code, test assertion for various scenarios with middle
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
