@@ -1,14 +1,4 @@
-//Function implementation
-const assertEqual = function(actual, expected) {
-  let returnString = '';
-
-  if (actual === expected) {
-    returnString = `😀 😀 Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    returnString = `😔 😔 Assertion Failed: ${actual} !== ${expected}`;
-  }
-  return console.log(returnString);
-};
+const assertEqual = require('./assertEqual');
 
 //eqArrays to not return true for nested arrays or arrays of objects that are identical.
 const eqArrays = function(arr1, arr2) {
@@ -24,9 +14,4 @@ const eqArrays = function(arr1, arr2) {
   return b1;
 };
 
-
-//assertEqual() Test Cases
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+module.exports = eqArrays;
