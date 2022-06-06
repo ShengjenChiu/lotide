@@ -10,15 +10,4 @@ const assertEqual = function(actual, expected) {
   return console.log(returnString);
 };
 
-//TEST CODE
-//Comparing identical strings
-assertEqual("Bootcamp", "Bootcamp");
-
-//Comparing non-identical strings
-assertEqual("Lighthouse Labs", "Bootcamp");
-
-//Comparing identical numbers
-assertEqual(1, 1);
-
-//Comparing non-identical numbers
-assertEqual(1, 700);
+module.exports = assertEqual;
