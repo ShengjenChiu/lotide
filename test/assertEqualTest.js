@@ -1,4 +1,6 @@
 const assertEqual = require('../assertEqual');
+//const assert = require('chai').assert;
+
 
 //TEST CODE
 //Comparing identical strings
