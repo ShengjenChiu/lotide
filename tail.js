@@ -13,6 +13,4 @@ const tail = function(arr) {
   return returnArr;
 };
 
-console.log(tail(['Yo Yo', 'Lighthouse', 'Labs']));
-
 module.exports = tail;
