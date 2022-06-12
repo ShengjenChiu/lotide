@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+//const assertEqual = require('./assertEqual');
 
 //eqArrays to not return true for nested arrays or arrays of objects that are identical.
 const eqArrays = function(arr1, arr2) {
