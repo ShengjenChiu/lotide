@@ -15,6 +15,7 @@ const middle = function(array) {
   if (arrLen % 2 !== 0) {
     let rem = arrLen % 2;
     reIndexOdd = (arrLen - rem) / 2;
+
     returnArr.push(array[reIndexOdd]);
   }
 
