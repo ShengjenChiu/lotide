@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@shengchiu/lotide",
   "version": "1.0.0",
-  "description": "a modular collection of functions",
-  "main": "assertArraysEqual.js",
+  "description": "a modular collection of functions with LHL Web Dev May 30 Bootcamp on 2022.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ShengjenChiu/lotide.git"
   },
-  "author": "",
+  "author": "Sheng Chiu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ShengjenChiu/lotide/issues"
